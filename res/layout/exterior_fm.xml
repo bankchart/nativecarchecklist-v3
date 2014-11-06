@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/exterior_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/exterior_bgdialog"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/exteriorRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/exteriorBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_button"
+                android:text="@string/backBtn"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/exteriorRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/exteriorLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/exteriorLabel"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/exteriorRow03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/colorCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Color"
+                android:onClick="onClickChecked"
+                android:tag="exterior" />
+
+            <CheckBox
+                android:id="@+id/tiresCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tires"
+                android:onClick="onClickChecked"
+                android:tag="exterior" />
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/exteriorRow04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/windowCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Window"
+                android:onClick="onClickChecked"
+                android:tag="exterior" />
+
+            <CheckBox
+                android:id="@+id/LightCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light"
+                android:onClick="onClickChecked"
+                android:tag="exterior" />
+		</TableRow>
+		
+        <TableRow
+            android:id="@+id/exteriorRow05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/door_hoodCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Doors &amp; hood"
+                android:onClick="onClickChecked"
+                android:tag="exterior" />
+
+            <CheckBox
+                android:id="@+id/sealCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seal"
+                android:onClick="onClickChecked"
+                android:tag="exterior" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/exteriorRow06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/handJackCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Hand jack"
+                android:onClick="onClickChecked"
+                android:tag="exterior" />
+
+            <CheckBox
+                android:id="@+id/tirePartCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tire part"
+                android:onClick="onClickChecked"
+                android:tag="exterior" />
+		</TableRow>
+            
+
+        <TableRow
+            android:id="@+id/tpowerRow07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/wrenchCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="Wrench"
+                android:onClick="onClickChecked"
+                android:tag="exterior" />
+        </TableRow>
+
+     
+    </TableLayout>
+
+</RelativeLayout>

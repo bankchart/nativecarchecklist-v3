@@ -1,0 +1,383 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/carImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/car" />
+
+    <LinearLayout
+        android:id="@+id/engine_layoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/myborder"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/engineBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="80dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="90dp"
+            android:maxWidth="90dp"
+            android:src="@drawable/engine" />
+
+        <ProgressBar
+            android:id="@+id/engineProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_bg"
+            android:minHeight="10dp"
+            android:minWidth="90dp" />
+
+     <TextView
+            android:id="@+id/engineProgressText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@id/engineProgress"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="-23dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/size1"/>
+            
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exterior_layoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/myborder"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/exteriorBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="80dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="90dp"
+            android:maxWidth="90dp"
+            android:src="@drawable/exterior" />
+
+        <ProgressBar
+            android:id="@+id/exteriorProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_bg"
+            android:minHeight="10dp"
+            android:minWidth="90dp"/>
+
+     <TextView
+            android:id="@+id/exteriorProgressText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@id/exteriorProgress"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="-23dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/size1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/power_layoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="390dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/myborder"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/powerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="80dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="90dp"
+            android:maxWidth="90dp"
+            android:src="@drawable/power" />
+
+        <ProgressBar
+            android:id="@+id/powerProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_bg"
+            android:minHeight="10dp"
+            android:minWidth="90dp"/>
+
+     <TextView
+            android:id="@+id/powerProgressText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@id/powerProgress"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="-23dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/size1"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interior_layoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="390dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/myborder"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/interiorBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="80dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="90dp"
+            android:maxWidth="90dp"
+            android:src="@drawable/interior" />
+
+        <ProgressBar
+            android:id="@+id/interiorProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_bg"
+            android:minHeight="10dp"
+            android:minWidth="90dp" />
+
+     <TextView
+            android:id="@+id/interiorProgressText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@id/interiorProgress"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="-23dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/size1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/document_layoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="730dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/myborder"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/documentBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="80dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="90dp"
+            android:maxWidth="90dp"
+            android:src="@drawable/document" />
+
+        <ProgressBar
+            android:id="@+id/documentProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_bg"
+            android:minHeight="10dp"
+            android:minWidth="90dp" />
+
+     <TextView
+            android:id="@+id/documentProgressText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@id/documentProgress"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="-23dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/size1"/>
+    </LinearLayout>
+    
+    <ImageButton
+            android:id="@+id/setting_layoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1110dp"
+            android:layout_marginTop="40dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="220dp"
+            android:maxWidth="220dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/setting" />
+    
+    <TextView 
+        android:id="@+id/ratingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="@string/rating"
+        android:layout_marginLeft="820dp"
+        android:layout_marginTop="70dp"
+        android:layout_alignTop="@id/setting_layoutBtn" />
+    
+    <TextView
+        android:id="@+id/ratingPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginLeft="1010dp"
+        android:layout_marginTop="110dp"
+        android:text="50 %" />
+    
+    <ProgressBar
+            android:id="@+id/ratingProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="1070dp"
+            android:layout_marginTop="114dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_ratingbg"
+            android:minHeight="18dp"
+            android:minWidth="90dp" />
+    
+    <!-- LinearLayout
+        android:id="@+id/setting_layoutBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="950dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/myborder_setting" >
+
+        <ImageView
+            android:id="@+id/settingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="80dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="220dp"
+            android:maxWidth="220dp"
+            android:src="@drawable/setting" />
+    </LinearLayout -->
+
+    <LinearLayout
+        android:id="@+id/engineLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <fragment
+            android:id="@+id/engine_fm"
+            android:name="com.example.nativecarchecklist.Engine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp" />
+
+        <fragment
+            android:id="@+id/enginesub_fm"
+            android:name="com.example.nativecarchecklist.EngineSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1100dp" />
+
+        <fragment
+            android:id="@+id/power_fm"
+            android:name="com.example.nativecarchecklist.Power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp" />
+
+        <fragment
+            android:id="@+id/exterior_fm"
+            android:name="com.example.nativecarchecklist.Exterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp" />
+
+        <fragment
+            android:id="@+id/interior_fm"
+            android:name="com.example.nativecarchecklist.Interior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp" />
+
+        <fragment
+            android:id="@+id/document_fm"
+            android:name="com.example.nativecarchecklist.Document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp" />
+        
+        <fragment 
+            android:id="@+id/setting_fm"
+            android:name="com.example.nativecarchecklist.Setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

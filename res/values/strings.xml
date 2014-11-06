@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NativeCarchecklist</string>
+    <string name="action_settings">Settings</string>
+	<string name="engine_text">Engine</string>
+    <string name="backBtn">BACK</string>
+    <string name="engineLabel">Engine</string>
+    <string name="powerLabel">Power</string>
+    <string name="exteriorLabel">Exterior</string>
+    <string name="interiorLabel">Interior</string>
+    <string name="documentLabel">Document</string>
+    
+    <string name="setting_ratio">Setting Ratio</string>
+    <string name="priority">Priority</string>
+    <string name="lowhigh">Low\t\t\t\tHigh</string>
+    <string name="high">High</string>
+    <string name="exterior">Exterior</string>
+    <string name="interior">Interior</string>
+    <string name="power">Power</string>
+    <string name="engine">Engine</string>
+    <string name="document">Document</string>
+    <string name="saveBtn">Save</string>
+    <string name="resetBtn">Reset</string>
+    <string name="languageBtn">Change language</string>
+    <string name="rating">Rating of the vehicle.</string>
+    
+</resources>

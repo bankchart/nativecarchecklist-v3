@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/document_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/document_bgdialog"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/documentRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/documentBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_button"
+                android:text="@string/backBtn"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/documentRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/documentLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/documentLabel"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/documentRow03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/insurancePaperCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Insurance paper"
+                android:onClick="onClickChecked"
+                android:tag="document" />
+
+            <CheckBox
+                android:id="@+id/actTaxCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Act &amp; Tax label"
+                android:onClick="onClickChecked"
+                android:tag="document" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/documentRow04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/billCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Bill"
+                android:onClick="onClickChecked"
+                android:tag="document" />
+
+            <CheckBox
+                android:id="@+id/licensePlateCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="License Plate"
+                android:onClick="onClickChecked"
+                android:tag="document" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/documentRow05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/licenseManualCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="License manual"
+                android:onClick="onClickChecked"
+                android:tag="document" />
+
+            <CheckBox
+                android:id="@+id/carPartPaperCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car part paper" 
+                android:onClick="onClickChecked"
+                android:tag="document" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/documentRow06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/carManualCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Car manual"
+                android:onClick="onClickChecked"
+                android:tag="document" />
+
+            <CheckBox
+                android:id="@+id/licenseRegisterCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="License register"
+                android:onClick="onClickChecked"
+                android:tag="document" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/documentRow07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/giftCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="Gift"
+                android:onClick="onClickChecked"
+                android:tag="document" />
+           
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

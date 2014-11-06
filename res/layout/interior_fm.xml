@@ -1,0 +1,239 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/interior_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/interior_bgdialog"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/interiorRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/interiorBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_button"
+                android:text="@string/backBtn"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/interiorRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/interiorLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/interiorLabel"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/interiorRow03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/seatCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Seat"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+
+            <CheckBox
+                android:id="@+id/woodConsoleCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wood console"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/interiorRow04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/leatheretteSteeringWheelCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Leatherette steering wheel"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+
+            <CheckBox
+                android:id="@+id/transmissionCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transmission"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+		</TableRow>
+		
+        <TableRow
+            android:id="@+id/interiorRow05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/sideDoorsCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Side doors"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+
+            <CheckBox
+                android:id="@+id/dashBoardCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DashBoard"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/interiorRow06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/carpetCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Carpet"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+
+            <CheckBox
+                android:id="@+id/curtainCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Curtain"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+		</TableRow>
+            
+
+        <TableRow
+            android:id="@+id/interiorrRow07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/seatBeltCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Seat belt" />
+            
+            <CheckBox
+                android:id="@+id/trunkReleaseCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trunk release" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/interiorrRow08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/lidOidOpenerCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Lid oil opener"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+            
+            <CheckBox
+                android:id="@+id/seatSettingCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seat setting"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/interiorrRow09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/seatBeltCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Seat belt"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+            
+            <CheckBox
+                android:id="@+id/trunkReleaseCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trunk release"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+        </TableRow>
+
+     	<TableRow
+            android:id="@+id/interiorrRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/brakePedalCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Brake pedal"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+            
+            <CheckBox
+                android:id="@+id/acceleratorCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accelerator"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+        </TableRow>
+        
+     	<TableRow
+            android:id="@+id/interiorrRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/handBrakeCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="Hand brake"
+                android:onClick="onClickChecked"
+                android:tag="interior" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,272 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical" >
+    
+    <TableLayout
+        android:id="@+id/setting_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_bgdialog"
+        android:orientation="vertical"
+        android:padding="30dp" >
+
+        <TableRow
+            android:id="@+id/settingRow01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/settingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/setting_ratio"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size2" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/settingRow02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/priorityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/priority"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/settingRow03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lowLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/lowhigh"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/settingRow04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="185dp"
+                android:text="1    2    3    4    5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/settingRow05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/exteriorLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exterior"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size1" />
+
+            <SeekBar
+                android:id="@+id/exteriorVolume"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-140dp"
+                android:max="4"
+                android:progress="0"
+                android:secondaryProgress="0" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/settingRow06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/interiorLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/interior"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size1" />
+
+            <SeekBar
+                android:id="@+id/interiorVolume"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-140dp"
+                android:max="4"
+                android:progress="0"
+                android:secondaryProgress="0" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/settingRow07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/powerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/power"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size1" />
+
+            <SeekBar
+                android:id="@+id/powerVolume"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-140dp"
+                android:max="4"
+                android:progress="0"
+                android:secondaryProgress="0" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/settingRow08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/engineLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/engine"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size1" />
+
+            <SeekBar
+                android:id="@+id/engineVolume"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-140dp"
+                android:max="4"
+                android:progress="0"
+                android:secondaryProgress="0" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/settingRow09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/documentLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/document"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size1" />
+
+            <SeekBar
+                android:id="@+id/documentVolume"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-140dp"
+                android:max="4"
+                android:progress="0"
+                android:secondaryProgress="0" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/settingRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/saveBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button"
+                    android:padding="10dp"
+                    android:text="@string/saveBtn"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/settingRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/resetBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button"
+                    android:padding="10dp"
+                    android:text="@string/resetBtn"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/settingRow12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/languageBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button"
+                    android:padding="10dp"
+                    android:text="@string/languageBtn"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
