@@ -4,6 +4,6 @@
     android:propertyName="x" 
     android:valueType="floatType"
     android:valueFrom="-1000"
-    android:valueTo="350" 
+    android:valueTo="550" 
     android:duration="600"/>
 </set>

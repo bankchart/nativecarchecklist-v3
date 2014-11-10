@@ -335,14 +335,14 @@
             android:name="com.example.nativecarchecklist.Engine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp" />
+            android:layout_marginTop="210dp" />
 
-        <fragment
+        <!-- fragment
             android:id="@+id/enginesub_fm"
             android:name="com.example.nativecarchecklist.EngineSub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="1100dp" />
+            android:layout_marginLeft="1100dp" / -->
 
         <fragment
             android:id="@+id/power_fm"
@@ -356,7 +356,7 @@
             android:name="com.example.nativecarchecklist.Exterior"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="250dp" />
+            android:layout_marginTop="150dp" />
 
         <fragment
             android:id="@+id/interior_fm"
@@ -370,7 +370,7 @@
             android:name="com.example.nativecarchecklist.Document"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="210dp" />
+            android:layout_marginTop="160dp" />
         
         <fragment 
             android:id="@+id/setting_fm"

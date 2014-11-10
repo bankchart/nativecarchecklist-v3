@@ -1,10 +1,19 @@
 package com.example.nativecarchecklist;
 
+import java.util.Locale;
+
 import android.os.Bundle;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -33,16 +42,17 @@ public class MainActivity extends Activity {
 	private final int EXTERIOR_SIZE = 9;
 	private final int INTERIOR_SIZE = 15;
 	private final int DOCUMENT_SIZE = 9;
+	private final int DEFAULT_PRIORITY = 3;
 
 	private DetailList powerList = new DetailList("power", POWER_SIZE);
 	private DetailList engineList = new DetailList("engine", ENGINE_SIZE);
 	private DetailList exteriorList = new DetailList("exterior", EXTERIOR_SIZE);
 	private DetailList interiorList = new DetailList("interior", INTERIOR_SIZE);
 	private DetailList documentList = new DetailList("document", DOCUMENT_SIZE);
-	
+
 	private RatingCheckList rating = new RatingCheckList();
-	
-	private int priority[] = new int[]{3, 3, 3, 3, 3};
+
+	private int priority[] = new int[] { 3, 3, 3, 3, 3 };
 
 	private TextView engineProgressText;
 	private TextView powerProgressText;
@@ -64,7 +74,9 @@ public class MainActivity extends Activity {
 	private SeekBar interiorVolume;
 	private SeekBar documentVolume;
 	
-	private Button saveBtn;
+	private Locale myLocale;
+
+	private Button saveBtn, resetBtn;
 
 	public void onClickChecked(View v) {
 		String yourCheck = (String) v.getTag();
@@ -178,52 +190,63 @@ public class MainActivity extends Activity {
 		ratingCheckList();
 	}
 
-	public void savePriority(){
+	public void savePriority() {
 		priority[0] = exteriorVolume.getProgress() + 1;
 		priority[1] = interiorVolume.getProgress() + 1;
 		priority[2] = powerVolume.getProgress() + 1;
 		priority[3] = engineVolume.getProgress() + 1;
-		priority[4] = documentVolume.getProgress() + 1;		
+		priority[4] = documentVolume.getProgress() + 1;
 		checkSlide();
 		ratingCheckList();
-		Toast.makeText(getApplicationContext(), 
-                "SAVED", Toast.LENGTH_LONG).show();
+		Toast.makeText(getApplicationContext(), "SAVED", Toast.LENGTH_LONG)
+				.show();
 	}
-	
+
+	public void resetPriority() {
+		priority[0] = DEFAULT_PRIORITY - 1;
+		priority[1] = DEFAULT_PRIORITY - 1;
+		priority[2] = DEFAULT_PRIORITY - 1;
+		priority[3] = DEFAULT_PRIORITY - 1;
+		priority[4] = DEFAULT_PRIORITY - 1;
+		exteriorVolume.setProgress(priority[0]);
+		interiorVolume.setProgress(priority[1]);
+		powerVolume.setProgress(priority[2]);
+		engineVolume.setProgress(priority[3]);
+		documentVolume.setProgress(priority[4]);
+		checkSlide();
+		ratingCheckList();
+		Toast.makeText(getApplicationContext(), "RESETED", Toast.LENGTH_LONG)
+				.show();
+	}
+
 	public void ratingCheckList() {
 
-/*		rating.setExterior(exteriorVolume.getProgress());
-		rating.setInterior(interiorVolume.getProgress());
-		rating.setPower(powerVolume.getProgress());
-		rating.setEngine(engineVolume.getProgress());
-		rating.setDocument(documentVolume.getProgress());*/
-		rating.setPriority(
-				priority[0],     // exterior 
-				priority[1],    // interior
-				priority[2],   // power
-				priority[3],  // engine
-				priority[4]  // document
+		/*
+		 * rating.setExterior(exteriorVolume.getProgress());
+		 * rating.setInterior(interiorVolume.getProgress());
+		 * rating.setPower(powerVolume.getProgress());
+		 * rating.setEngine(engineVolume.getProgress());
+		 * rating.setDocument(documentVolume.getProgress());
+		 */
+		rating.setPriority(priority[0], // exterior
+				priority[1], // interior
+				priority[2], // power
+				priority[3], // engine
+				priority[4] // document
+		);
+		double ratingTmp = rating.getRating(exteriorProgress.getProgress(), // exterior
+				interiorProgress.getProgress(), // interior
+				powerProgress.getProgress(), // power
+				engineProgress.getProgress(), // engine
+				documentProgress.getProgress() // document
 				);
-		double ratingTmp = rating.getRating(
-				exteriorProgress.getProgress(),     // exterior 
-				interiorProgress.getProgress(),    // interior
-				powerProgress.getProgress(),   // power
-				engineProgress.getProgress(),  // engine
-				documentProgress.getProgress()  // document
-				);
-		System.out.println("p0 : " + priority[0]);
-		System.out.println("p1 : " + priority[1]);
-		System.out.println("p2 : " + priority[2]);
-		System.out.println("p3 : " + priority[3]);
-		System.out.println("p4 : " + priority[4]);
-		System.out.println("rating : " + ratingTmp);
-		if(ratingTmp > 0){
+		if (ratingTmp > 0) {
 			ratingLabel.setVisibility(View.VISIBLE);
 			ratingPercent.setText((int) ratingTmp + " %");
 			ratingPercent.setVisibility(View.VISIBLE);
 			ratingProgress.setVisibility(View.VISIBLE);
 			ratingProgress.setProgress((int) ratingTmp);
-		}else{
+		} else {
 			ratingLabel.setVisibility(View.INVISIBLE);
 			ratingPercent.setVisibility(View.INVISIBLE);
 			ratingProgress.setVisibility(View.INVISIBLE);
@@ -272,84 +295,110 @@ public class MainActivity extends Activity {
 	public void checkSlide() {
 		for (int i = 0; i < menuIsShow.length; i++) {
 			if (menuIsShow[i]) {
-				FragmentTransaction ft;
+				// FragmentTransaction ft;
 				switch (i) {
-				case 0:
+				case 0:			
+					
+					/*Fragment powerFm = getFragmentManager().findFragmentById(R.id.power_fm);
+					FragmentTransaction fts = getFragmentManager().beginTransaction();
+					fts.setCustomAnimations(R.animator.power_motion_in, R.animator.power_motion_out);
+					fts.replace(R.id.engine_fm, powerFm, null);
+					fts.commit();*/
+					FragmentTransaction ft_0;
 					getPreferences(MODE_PRIVATE).edit().putInt("already", 1)
 							.commit();
-					ft = getFragmentManager().beginTransaction()
+					ft_0 = getFragmentManager().beginTransaction()
 							.setCustomAnimations(R.animator.power_motion_in,
 									R.animator.power_motion_out);
-					FragmentManager fm = getFragmentManager();
-					final Fragment powerFm = fm.findFragmentById(R.id.power_fm);
-					ft.hide(powerFm);
-					ft.commit();
+					FragmentManager fm_0 = getFragmentManager();
+					final Fragment powerFm = fm_0
+							.findFragmentById(R.id.power_fm);
+					ft_0.hide(powerFm);
+					ft_0.commit();
 					break;
-				case 1:
+				case 1:					
+					FragmentTransaction ft_1;
 					getPreferences(MODE_PRIVATE).edit().putInt("already", 1)
 							.commit();
-					ft = getFragmentManager().beginTransaction()
+					ft_1 = getFragmentManager().beginTransaction()
 							.setCustomAnimations(R.animator.engine_motion_in,
 									R.animator.engine_motion_out);
-					fm = getFragmentManager();
-					final Fragment engineFm = fm
+					FragmentManager fm_1 = getFragmentManager();
+					final Fragment engineFm = fm_1
 							.findFragmentById(R.id.engine_fm);
-					ft.hide(engineFm);
-					ft.commit();
+					ft_1.hide(engineFm);
+					ft_1.commit();
 					break;
 				case 2:
+					FragmentTransaction ft_2;
 					getPreferences(MODE_PRIVATE).edit().putInt("already", 1)
 							.commit();
-					ft = getFragmentManager().beginTransaction()
+					ft_2 = getFragmentManager().beginTransaction()
 							.setCustomAnimations(R.animator.exterior_motion_in,
 									R.animator.exterior_motion_out);
-					fm = getFragmentManager();
-					final Fragment exteriorFm = fm
+					FragmentManager fm_2 = getFragmentManager();
+					final Fragment exteriorFm = fm_2
 							.findFragmentById(R.id.exterior_fm);
-					ft.hide(exteriorFm);
-					ft.commit();
+					ft_2.hide(exteriorFm);
+					ft_2.commit();
 					break;
 				case 3:
+					FragmentTransaction ft_3;
 					getPreferences(MODE_PRIVATE).edit().putInt("already", 1)
 							.commit();
-					ft = getFragmentManager().beginTransaction()
+					ft_3 = getFragmentManager().beginTransaction()
 							.setCustomAnimations(R.animator.interior_motion_in,
 									R.animator.interior_motion_out);
-					fm = getFragmentManager();
-					final Fragment interiorFm = fm
+					FragmentManager fm_3 = getFragmentManager();
+					final Fragment interiorFm = fm_3
 							.findFragmentById(R.id.interior_fm);
-					ft.hide(interiorFm);
-					ft.commit();
+					ft_3.hide(interiorFm);
+					ft_3.commit();
 					break;
 				case 4:
+					FragmentTransaction ft_4;
 					getPreferences(MODE_PRIVATE).edit().putInt("already", 1)
 							.commit();
-					ft = getFragmentManager().beginTransaction()
+					ft_4 = getFragmentManager().beginTransaction()
 							.setCustomAnimations(R.animator.document_motion_in,
 									R.animator.document_motion_out);
-					fm = getFragmentManager();
-					final Fragment documentFm = fm
+					FragmentManager fm_4 = getFragmentManager();
+					final Fragment documentFm = fm_4
 							.findFragmentById(R.id.document_fm);
-					ft.hide(documentFm);
-					ft.commit();
+					ft_4.hide(documentFm);
+					ft_4.commit();
 					break;
 				case 5:
+					FragmentTransaction ft_5;
 					getPreferences(MODE_PRIVATE).edit().putInt("already", 1)
 							.commit();
-					ft = getFragmentManager().beginTransaction()
+					ft_5 = getFragmentManager().beginTransaction()
 							.setCustomAnimations(R.animator.setting_motion_in,
 									R.animator.setting_motion_out);
-					fm = getFragmentManager();
-					final Fragment settingFm = fm
+					FragmentManager fm_5 = getFragmentManager();
+					final Fragment settingFm = fm_5
 							.findFragmentById(R.id.setting_fm);
-					ft.hide(settingFm);
-					ft.commit();
+					ft_5.hide(settingFm);
+					ft_5.commit();
 					break;
 				}
 			}
 			menuIsShow[i] = false;
 		}
 	}
+	
+	public void setLocale(String lang) {
+		 
+        myLocale = new Locale(lang);
+        Resources res = getResources();
+        //DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, null);
+        //Intent refresh = new Intent(this, AndroidLocalize.class);
+        onCreate(null);
+        //startActivity(refresh);
+    }
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -391,7 +440,8 @@ public class MainActivity extends Activity {
 		documentVolume.setProgress(2);
 
 		saveBtn = (Button) findViewById(R.id.saveBtn);
-		
+		resetBtn = (Button) findViewById(R.id.resetBtn);
+
 		ratingLabel.setVisibility(View.INVISIBLE); // hide
 		ratingPercent.setVisibility(View.INVISIBLE); // hide
 		ratingProgress.setRotation(180);
@@ -476,7 +526,8 @@ public class MainActivity extends Activity {
 		FragmentManager fm = getFragmentManager();
 
 		Fragment engineFm = fm.findFragmentById(R.id.engine_fm);
-		Fragment engineSubFm = fm.findFragmentById(R.id.enginesub_fm);
+
+		// Fragment engineSubFm = fm.findFragmentById(R.id.enginesub_fm);
 
 		Fragment powerFm = fm.findFragmentById(R.id.power_fm);
 
@@ -495,7 +546,7 @@ public class MainActivity extends Activity {
 		Button documentBackBtn = (Button) findViewById(R.id.documentBackBtn);
 
 		ft.hide(engineFm);
-		ft.hide(engineSubFm);
+		// ft.hide(engineSubFm);
 		ft.hide(powerFm);
 		ft.hide(exteriorFm);
 		ft.hide(interiorFm);
@@ -519,7 +570,7 @@ public class MainActivity extends Activity {
 
 		getPreferences(MODE_PRIVATE).edit().putInt("already", 1).commit();
 
-		// engine
+		// engine**********************************************************************
 
 		engineLayoutBtn.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
@@ -547,10 +598,10 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		// power
-
+		// power**********************************************************************
+	
 		powerLayoutBtn.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
+			@SuppressLint("NewApi") public void onClick(View v) {
 				int compareMenu = -1;
 				for (int i = 0; i < menuIsShow.length; i++) {
 					if (menuIsShow[i]) {
@@ -559,6 +610,16 @@ public class MainActivity extends Activity {
 				}
 				if (compareMenu != POWER_INDEX) {
 					checkSlide();
+					/*FragmentTransaction fragmentTransaction =
+						      getFragmentManager().beginTransaction();
+
+						    fragmentTransaction.setCustomAnimations(
+						      R.animator.power_motion_in, R.animator.power_motion_out,
+						      R.animator.power_motion_in, R.animator.power_motion_out);
+						    Fragment powerFm = getFragmentManager().findFragmentById(R.id.power_fm);
+						    fragmentTransaction.replace(R.id.engine_fm, powerFm);
+						    fragmentTransaction.addToBackStack(null);
+						    fragmentTransaction.commit();*/
 				}
 				menuToggle(R.animator.power_motion_in,
 						R.animator.power_motion_out, R.id.power_fm, POWER_INDEX);
@@ -674,11 +735,18 @@ public class MainActivity extends Activity {
 						SETTING_INDEX);
 			}
 		});
-		
-		saveBtn.setOnClickListener(new OnClickListener(){
+
+		saveBtn.setOnClickListener(new OnClickListener() {
 			@Override
-			public void onClick(View v){
+			public void onClick(View v) {
 				savePriority();
+			}
+		});
+
+		resetBtn.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				resetPriority();
 			}
 		});
 
