@@ -23,7 +23,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_button"
-                android:text="@string/backBtn"
+                android:text="@string/back"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
@@ -39,7 +39,7 @@
                 android:layout_marginBottom="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/exteriorLabel"
+                android:text="@string/exterior"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Color"
+                android:text="@string/outside_color"
                 android:onClick="onClickChecked"
                 android:tag="exterior" />
 
@@ -61,7 +61,7 @@
                 android:id="@+id/tiresCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tires"
+                android:text="@string/outside_tires"
                 android:onClick="onClickChecked"
                 android:tag="exterior" />
             
@@ -77,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Window"
+                android:text="@string/outside_window"
                 android:onClick="onClickChecked"
                 android:tag="exterior" />
 
@@ -85,7 +85,7 @@
                 android:id="@+id/LightCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Light"
+                android:text="@string/outside_light"
                 android:onClick="onClickChecked"
                 android:tag="exterior" />
 		</TableRow>
@@ -99,7 +99,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Doors &amp; hood"
+                android:text="@string/outside_doorHood"
                 android:onClick="onClickChecked"
                 android:tag="exterior" />
 
@@ -107,7 +107,7 @@
                 android:id="@+id/sealCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Seal"
+                android:text="@string/outside_seal"
                 android:onClick="onClickChecked"
                 android:tag="exterior" />
         </TableRow>
@@ -122,7 +122,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Hand jack"
+                android:text="@string/outside_jack"
                 android:onClick="onClickChecked"
                 android:tag="exterior" />
 
@@ -130,7 +130,7 @@
                 android:id="@+id/tirePartCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tire part"
+                android:text="@string/outside_tirePart"
                 android:onClick="onClickChecked"
                 android:tag="exterior" />
 		</TableRow>
@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginBottom="30dp"
-                android:text="Wrench"
+                android:text="@string/outside_wrench"
                 android:onClick="onClickChecked"
                 android:tag="exterior" />
         </TableRow>

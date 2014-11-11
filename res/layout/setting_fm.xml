@@ -24,7 +24,7 @@
                 android:layout_marginBottom="20dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/setting_ratio"
+                android:text="@string/setting"
                 android:textColor="@color/white"
                 android:textSize="@dimen/size2" />
         </TableRow>
@@ -215,7 +215,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/bg_button"
                     android:padding="10dp"
-                    android:text="@string/saveBtn"
+                    android:text="@string/save"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
             </LinearLayout>
         </TableRow>
@@ -239,7 +239,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/bg_button"
                     android:padding="10dp"
-                    android:text="@string/resetBtn"
+                    android:text="@string/reset"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
             </LinearLayout>
         </TableRow>
@@ -263,7 +263,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/bg_button"
                     android:padding="10dp"
-                    android:text="@string/languageBtn"
+                    android:text="@string/changeLanguage"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
             </LinearLayout>
         </TableRow>

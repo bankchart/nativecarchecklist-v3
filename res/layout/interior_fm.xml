@@ -23,7 +23,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_button"
-                android:text="@string/backBtn"
+                android:text="@string/back"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
@@ -39,7 +39,7 @@
                 android:layout_marginBottom="30dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/interiorLabel"
+                android:text="@string/interior"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Seat"
+                android:text="@string/inside_seat"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
 
@@ -61,7 +61,7 @@
                 android:id="@+id/woodConsoleCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wood console"
+                android:text="@string/inside_console"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
             
@@ -77,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Leatherette steering wheel"
+                android:text="@string/inside_steeringWheel"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
 
@@ -85,7 +85,7 @@
                 android:id="@+id/transmissionCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Transmission"
+                android:text="@string/inside_transmission"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
 		</TableRow>
@@ -99,7 +99,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Side doors"
+                android:text="@string/inside_sideDoors"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
 
@@ -107,7 +107,7 @@
                 android:id="@+id/dashBoardCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DashBoard"
+                android:text="@string/inside_dashBoard"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
         </TableRow>
@@ -122,7 +122,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Carpet"
+                android:text="@string/inside_carpet"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
 
@@ -130,7 +130,7 @@
                 android:id="@+id/curtainCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Curtain"
+                android:text="@string/inside_curtain"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
 		</TableRow>
@@ -145,13 +145,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Seat belt" />
+                android:text="@string/inside_seatBelt" />
             
             <CheckBox
                 android:id="@+id/trunkReleaseCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Trunk release" />
+                android:text="@string/inside_backDoor" />
         </TableRow>
         
         <TableRow
@@ -163,7 +163,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Lid oil opener"
+                android:text="@string/inside_lidOil"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
             
@@ -171,7 +171,7 @@
                 android:id="@+id/seatSettingCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Seat setting"
+                android:text="@string/inside_setSeat"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
         </TableRow>
@@ -185,7 +185,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Seat belt"
+                android:text="@string/inside_seatBelt"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
             
@@ -193,7 +193,7 @@
                 android:id="@+id/trunkReleaseCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Trunk release"
+                android:text="@string/inside_backDoor"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
         </TableRow>
@@ -207,7 +207,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Brake pedal"
+                android:text="@string/inside_brakePedal"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
             
@@ -215,7 +215,7 @@
                 android:id="@+id/acceleratorCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Accelerator"
+                android:text="@string/inside_accelerator"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
         </TableRow>
@@ -230,7 +230,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginBottom="30dp"
-                android:text="Hand brake"
+                android:text="@string/inside_handBrake"
                 android:onClick="onClickChecked"
                 android:tag="interior" />
         </TableRow>

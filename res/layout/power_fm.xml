@@ -23,7 +23,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_button"
-                android:text="@string/backBtn"
+                android:text="@string/back"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
@@ -39,7 +39,7 @@
                 android:layout_marginBottom="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/powerLabel"
+                android:text="@string/power"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Head light"
+                android:text="@string/power_headLight"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -61,7 +61,7 @@
                 android:id="@+id/dimmerLightCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dimmer light"
+                android:text="@string/power_dim"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -69,7 +69,7 @@
                 android:id="@+id/highBeamCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="High beam"
+                android:text="@string/power_highBeam"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -77,7 +77,7 @@
                 android:id="@+id/dashBoardLightCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DashBoard light"
+                android:text="@string/power_dashBoardLight"
                 android:onClick="onClickChecked"
                 android:tag="power" />
         </TableRow>
@@ -92,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Dome light"
+                android:text="@string/power_cabinSeatLight"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -100,7 +100,7 @@
                 android:id="@+id/sideDoorsLightCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Side doors light"
+                android:text="@string/power_sideDoorLight"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -108,7 +108,7 @@
                 android:id="@+id/turnsignalCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Turn signal"
+                android:text="@string/power_turnSignal"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -116,7 +116,7 @@
                 android:id="@+id/airConditionCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Air Condition"
+                android:text="@string/power_air"
                 android:onClick="onClickChecked"
                 android:tag="power" />
         </TableRow>
@@ -131,7 +131,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Thermometer"
+                android:text="@string/power_thermometer"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -139,7 +139,7 @@
                 android:id="@+id/hornCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Horn"
+                android:text="@string/power_horn"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -147,7 +147,7 @@
                 android:id="@+id/windShieldWiperCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Windshieldwper"
+                android:text="@string/power_wipe"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -155,7 +155,7 @@
                 android:id="@+id/rainSensorCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rain sensor"
+                android:text="@string/power_rainSensor"
                 android:onClick="onClickChecked"
                 android:tag="power" />
         </TableRow>
@@ -170,7 +170,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Center brake lights"
+                android:text="@string/power_thirdBrakeLight"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -178,7 +178,7 @@
                 android:id="@+id/defoggerBackCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Defogger back"
+                android:text="@string/power_antiFoggyBack"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -186,7 +186,7 @@
                 android:id="@+id/defoggerSideCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Defogger side"
+                android:text="@string/power_antiFoggySide"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -195,7 +195,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
-                android:text="Turn steering wheel to each end"
+                android:text="@string/power_steeringWheelTest"
                 android:onClick="onClickChecked"
                 android:tag="power" />
         </TableRow>
@@ -210,7 +210,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Set stering wheel"
+                android:text="@string/power_steeringWheelSet"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -218,7 +218,7 @@
                 android:id="@+id/carStereoCDCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Car Stereo CD"
+                android:text="@string/power_carStereo"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -226,7 +226,7 @@
                 android:id="@+id/powerWindowCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Power window"
+                android:text="@string/power_electronicWindow"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -234,7 +234,7 @@
                 android:id="@+id/sideMirrorCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Side mirror"
+                android:text="@string/power_sideMirror"
                 android:onClick="onClickChecked"
                 android:tag="power" />
         </TableRow>
@@ -249,7 +249,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Doors warning"
+                android:text="@string/power_warnDoor"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -257,7 +257,7 @@
                 android:id="@+id/seatBeltWarningCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Seat belt warning"
+                android:text="@string/power_warnSeatBelt"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -265,7 +265,7 @@
                 android:id="@+id/handBrakeWarningCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hand brake warning"
+                android:text="@string/power_warnHandBrake"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -273,7 +273,7 @@
                 android:id="@+id/digitalClockCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Digital clock"
+                android:text="@string/power_clock"
                 android:onClick="onClickChecked"
                 android:tag="power" />
         </TableRow>
@@ -288,7 +288,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Remote Key"
+                android:text="@string/power_remoteKey"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -296,7 +296,7 @@
                 android:id="@+id/centralLockCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Central lock"
+                android:text="@string/power_centralLock"
                 android:onClick="onClickChecked"
                 android:tag="power" />
 
@@ -304,7 +304,7 @@
                 android:id="@+id/transmissionPositionCb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Transmission position"
+                android:text="@string/power_transmissionPosition"
                 android:onClick="onClickChecked"
                 android:tag="power" />
         </TableRow>

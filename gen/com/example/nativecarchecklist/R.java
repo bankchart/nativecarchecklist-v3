@@ -39,6 +39,10 @@ public final class R {
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
+ Default screen margins, per the Android Design guidelines. 
+ Default screen margins, per the Android Design guidelines. 
+ Default screen margins, per the Android Design guidelines. 
+ Default screen margins, per the Android Design guidelines. 
          */
         public static final int activity_horizontal_margin=0x7f060006;
         public static final int activity_vertical_margin=0x7f060007;
@@ -57,335 +61,331 @@ public final class R {
         public static final int bgsub_dialog=0x7f020004;
         public static final int block=0x7f020005;
         public static final int car=0x7f020006;
-        public static final int document=0x7f020007;
-        public static final int document_bgdialog=0x7f020008;
-        public static final int engine=0x7f020009;
-        public static final int engine_bgdialog=0x7f02000a;
-        public static final int exterior=0x7f02000b;
-        public static final int exterior_bgdialog=0x7f02000c;
-        public static final int gradient=0x7f02000d;
-        public static final int ic_launcher=0x7f02000e;
-        public static final int interior=0x7f02000f;
-        public static final int interior_bgdialog=0x7f020010;
-        public static final int myborder=0x7f020011;
-        public static final int myborder_setting=0x7f020012;
-        public static final int power=0x7f020013;
-        public static final int power_bgdialog=0x7f020014;
-        public static final int progress_bg=0x7f020015;
-        public static final int progress_ratingbg=0x7f020016;
-        public static final int setting=0x7f020017;
-        public static final int setting_bgdialog=0x7f020018;
+        public static final int ch_icon=0x7f020007;
+        public static final int de_icon=0x7f020008;
+        public static final int document=0x7f020009;
+        public static final int document_bgdialog=0x7f02000a;
+        public static final int engine=0x7f02000b;
+        public static final int engine_bgdialog=0x7f02000c;
+        public static final int exterior=0x7f02000d;
+        public static final int exterior_bgdialog=0x7f02000e;
+        public static final int gradient=0x7f02000f;
+        public static final int ic_launcher=0x7f020010;
+        public static final int interior=0x7f020011;
+        public static final int interior_bgdialog=0x7f020012;
+        public static final int jp_icon=0x7f020013;
+        public static final int myborder=0x7f020014;
+        public static final int myborder_setting=0x7f020015;
+        public static final int power=0x7f020016;
+        public static final int power_bgdialog=0x7f020017;
+        public static final int progress_bg=0x7f020018;
+        public static final int progress_ratingbg=0x7f020019;
+        public static final int setting=0x7f02001a;
+        public static final int setting_bgdialog=0x7f02001b;
+        public static final int th_icon=0x7f02001c;
+        public static final int usa_icon=0x7f02001d;
     }
     public static final class id {
-        public static final int LightCb=0x7f0a0055;
-        public static final int acceleratorCb=0x7f0a0078;
-        public static final int actTaxCb=0x7f0a0028;
-        public static final int action_settings=0x7f0a00b9;
-        public static final int airConditionCb=0x7f0a0088;
-        public static final int billCb=0x7f0a002a;
-        public static final int brakePedalCb=0x7f0a0077;
+        public static final int LightCb=0x7f0a005a;
+        public static final int acceleratorCb=0x7f0a007d;
+        public static final int actTaxCb=0x7f0a002d;
+        public static final int action_settings=0x7f0a00be;
+        public static final int airConditionCb=0x7f0a008d;
+        public static final int billCb=0x7f0a002f;
+        public static final int brakePedalCb=0x7f0a007c;
         public static final int carImage=0x7f0a0001;
-        public static final int carManualCb=0x7f0a0030;
-        public static final int carPartPaperCb=0x7f0a002e;
-        public static final int carStereoCDCb=0x7f0a0095;
-        public static final int carpetCb=0x7f0a006d;
-        public static final int centerBrakeLightsCb=0x7f0a008f;
-        public static final int centralLockCb=0x7f0a009e;
-        public static final int checkBox1=0x7f0a003a;
-        public static final int checkBox10=0x7f0a0047;
-        public static final int checkBox11=0x7f0a0049;
-        public static final int checkBox2=0x7f0a003b;
-        public static final int checkBox3=0x7f0a003d;
-        public static final int checkBox4=0x7f0a003e;
-        public static final int checkBox5=0x7f0a0040;
-        public static final int checkBox6=0x7f0a0041;
-        public static final int checkBox7=0x7f0a0043;
-        public static final int checkBox8=0x7f0a0044;
-        public static final int checkBox9=0x7f0a0046;
-        public static final int colorCb=0x7f0a0051;
-        public static final int curtainCb=0x7f0a006e;
-        public static final int dashBoardCb=0x7f0a006b;
-        public static final int dashBoardLightCb=0x7f0a0083;
-        public static final int defoggerBackCb=0x7f0a0090;
-        public static final int defoggerSideCb=0x7f0a0091;
-        public static final int digitalClockCb=0x7f0a009c;
-        public static final int dimmerLightCb=0x7f0a0081;
-        public static final int documentBackBtn=0x7f0a0023;
+        public static final int carManualCb=0x7f0a0035;
+        public static final int carPartPaperCb=0x7f0a0033;
+        public static final int carStereoCDCb=0x7f0a009a;
+        public static final int carpetCb=0x7f0a0072;
+        public static final int centerBrakeLightsCb=0x7f0a0094;
+        public static final int centralLockCb=0x7f0a00a3;
+        public static final int ch=0x7f0a0024;
+        public static final int checkBox1=0x7f0a003f;
+        public static final int checkBox10=0x7f0a004c;
+        public static final int checkBox11=0x7f0a004e;
+        public static final int checkBox2=0x7f0a0040;
+        public static final int checkBox3=0x7f0a0042;
+        public static final int checkBox4=0x7f0a0043;
+        public static final int checkBox5=0x7f0a0045;
+        public static final int checkBox6=0x7f0a0046;
+        public static final int checkBox7=0x7f0a0048;
+        public static final int checkBox8=0x7f0a0049;
+        public static final int checkBox9=0x7f0a004b;
+        public static final int colorCb=0x7f0a0056;
+        public static final int curtainCb=0x7f0a0073;
+        public static final int dashBoardCb=0x7f0a0070;
+        public static final int dashBoardLightCb=0x7f0a0088;
+        public static final int defoggerBackCb=0x7f0a0095;
+        public static final int defoggerSideCb=0x7f0a0096;
+        public static final int digitalClockCb=0x7f0a00a1;
+        public static final int dimmerLightCb=0x7f0a0086;
+        public static final int documentBackBtn=0x7f0a0028;
         public static final int documentBtn=0x7f0a0013;
-        public static final int documentLabel=0x7f0a0025;
+        public static final int documentLabel=0x7f0a002a;
         public static final int documentProgress=0x7f0a0014;
         public static final int documentProgressText=0x7f0a0015;
-        public static final int documentRow01=0x7f0a0022;
-        public static final int documentRow02=0x7f0a0024;
-        public static final int documentRow03=0x7f0a0026;
-        public static final int documentRow04=0x7f0a0029;
-        public static final int documentRow05=0x7f0a002c;
-        public static final int documentRow06=0x7f0a002f;
-        public static final int documentRow07=0x7f0a0032;
-        public static final int documentVolume=0x7f0a00b2;
+        public static final int documentRow01=0x7f0a0027;
+        public static final int documentRow02=0x7f0a0029;
+        public static final int documentRow03=0x7f0a002b;
+        public static final int documentRow04=0x7f0a002e;
+        public static final int documentRow05=0x7f0a0031;
+        public static final int documentRow06=0x7f0a0034;
+        public static final int documentRow07=0x7f0a0037;
+        public static final int documentVolume=0x7f0a00b7;
         public static final int document_fm=0x7f0a001f;
-        public static final int document_layout=0x7f0a0021;
+        public static final int document_layout=0x7f0a0026;
         public static final int document_layoutBtn=0x7f0a0012;
-        public static final int domeLightCb=0x7f0a0085;
-        public static final int door_hoodCb=0x7f0a0057;
-        public static final int doorsWarningCb=0x7f0a0099;
-        public static final int engineBackBtn=0x7f0a0036;
+        public static final int domeLightCb=0x7f0a008a;
+        public static final int door_hoodCb=0x7f0a005c;
+        public static final int doorsWarningCb=0x7f0a009e;
+        public static final int engineBackBtn=0x7f0a003b;
         public static final int engineBtn=0x7f0a0003;
-        public static final int engineLabel=0x7f0a0038;
+        public static final int engineLabel=0x7f0a003d;
         public static final int engineLayout=0x7f0a001a;
         public static final int engineProgress=0x7f0a0004;
         public static final int engineProgressText=0x7f0a0005;
-        public static final int engineVolume=0x7f0a00b0;
+        public static final int engineVolume=0x7f0a00b5;
         public static final int engine_fm=0x7f0a001b;
-        public static final int engine_layout=0x7f0a0034;
+        public static final int engine_layout=0x7f0a0039;
         public static final int engine_layoutBtn=0x7f0a0002;
-        public static final int enginesub_linear=0x7f0a004a;
-        public static final int exteriorBackBtn=0x7f0a004d;
+        public static final int enginesub_linear=0x7f0a004f;
+        public static final int exteriorBackBtn=0x7f0a0052;
         public static final int exteriorBtn=0x7f0a0007;
-        public static final int exteriorLabel=0x7f0a004f;
+        public static final int exteriorLabel=0x7f0a0054;
         public static final int exteriorProgress=0x7f0a0008;
         public static final int exteriorProgressText=0x7f0a0009;
-        public static final int exteriorRow01=0x7f0a004c;
-        public static final int exteriorRow02=0x7f0a004e;
-        public static final int exteriorRow03=0x7f0a0050;
-        public static final int exteriorRow04=0x7f0a0053;
-        public static final int exteriorRow05=0x7f0a0056;
-        public static final int exteriorRow06=0x7f0a0059;
-        public static final int exteriorVolume=0x7f0a00a9;
+        public static final int exteriorRow01=0x7f0a0051;
+        public static final int exteriorRow02=0x7f0a0053;
+        public static final int exteriorRow03=0x7f0a0055;
+        public static final int exteriorRow04=0x7f0a0058;
+        public static final int exteriorRow05=0x7f0a005b;
+        public static final int exteriorRow06=0x7f0a005e;
+        public static final int exteriorVolume=0x7f0a00ae;
         public static final int exterior_fm=0x7f0a001d;
-        public static final int exterior_layout=0x7f0a004b;
+        public static final int exterior_layout=0x7f0a0050;
         public static final int exterior_layoutBtn=0x7f0a0006;
-        public static final int giftCb=0x7f0a0033;
-        public static final int handBrakeCb=0x7f0a007a;
-        public static final int handBrakeWarningCb=0x7f0a009b;
-        public static final int handJackCb=0x7f0a005a;
-        public static final int headLightCb=0x7f0a0080;
-        public static final int highBeamCb=0x7f0a0082;
-        public static final int hornCb=0x7f0a008b;
-        public static final int insurancePaperCb=0x7f0a0027;
-        public static final int interiorBackBtn=0x7f0a0060;
+        public static final int giftCb=0x7f0a0038;
+        public static final int handBrakeCb=0x7f0a007f;
+        public static final int handBrakeWarningCb=0x7f0a00a0;
+        public static final int handJackCb=0x7f0a005f;
+        public static final int headLightCb=0x7f0a0085;
+        public static final int highBeamCb=0x7f0a0087;
+        public static final int horizontalScrollView1=0x7f0a0021;
+        public static final int hornCb=0x7f0a0090;
+        public static final int insurancePaperCb=0x7f0a002c;
+        public static final int interiorBackBtn=0x7f0a0065;
         public static final int interiorBtn=0x7f0a000f;
-        public static final int interiorLabel=0x7f0a0062;
+        public static final int interiorLabel=0x7f0a0067;
         public static final int interiorProgress=0x7f0a0010;
         public static final int interiorProgressText=0x7f0a0011;
-        public static final int interiorRow01=0x7f0a005f;
-        public static final int interiorRow02=0x7f0a0061;
-        public static final int interiorRow03=0x7f0a0063;
-        public static final int interiorRow04=0x7f0a0066;
-        public static final int interiorRow05=0x7f0a0069;
-        public static final int interiorRow06=0x7f0a006c;
-        public static final int interiorVolume=0x7f0a00ab;
+        public static final int interiorRow01=0x7f0a0064;
+        public static final int interiorRow02=0x7f0a0066;
+        public static final int interiorRow03=0x7f0a0068;
+        public static final int interiorRow04=0x7f0a006b;
+        public static final int interiorRow05=0x7f0a006e;
+        public static final int interiorRow06=0x7f0a0071;
+        public static final int interiorVolume=0x7f0a00b0;
         public static final int interior_fm=0x7f0a001e;
-        public static final int interior_layout=0x7f0a005e;
+        public static final int interior_layout=0x7f0a0063;
         public static final int interior_layoutBtn=0x7f0a000e;
-        public static final int interiorrRow07=0x7f0a006f;
-        public static final int interiorrRow08=0x7f0a0072;
-        public static final int interiorrRow09=0x7f0a0075;
-        public static final int interiorrRow10=0x7f0a0076;
-        public static final int interiorrRow11=0x7f0a0079;
-        public static final int languageBtn=0x7f0a00b8;
-        public static final int leatheretteSteeringWheelCb=0x7f0a0067;
-        public static final int licenseManualCb=0x7f0a002d;
-        public static final int licensePlateCb=0x7f0a002b;
-        public static final int licenseRegisterCb=0x7f0a0031;
-        public static final int lidOidOpenerCb=0x7f0a0073;
-        public static final int lowLabel=0x7f0a00a6;
+        public static final int interiorrRow07=0x7f0a0074;
+        public static final int interiorrRow08=0x7f0a0077;
+        public static final int interiorrRow09=0x7f0a007a;
+        public static final int interiorrRow10=0x7f0a007b;
+        public static final int interiorrRow11=0x7f0a007e;
+        public static final int jp=0x7f0a0025;
+        public static final int languageBtn=0x7f0a00bd;
+        public static final int leatheretteSteeringWheelCb=0x7f0a006c;
+        public static final int licenseManualCb=0x7f0a0032;
+        public static final int licensePlateCb=0x7f0a0030;
+        public static final int licenseRegisterCb=0x7f0a0036;
+        public static final int lidOidOpenerCb=0x7f0a0078;
+        public static final int lowLabel=0x7f0a00ab;
         public static final int mainlayout=0x7f0a0000;
-        public static final int powerBackBtn=0x7f0a007d;
+        public static final int powerBackBtn=0x7f0a0082;
         public static final int powerBtn=0x7f0a000b;
-        public static final int powerLabel=0x7f0a00ad;
+        public static final int powerLabel=0x7f0a00b2;
         public static final int powerProgress=0x7f0a000c;
         public static final int powerProgressText=0x7f0a000d;
-        public static final int powerRow01=0x7f0a007c;
-        public static final int powerRow02=0x7f0a007e;
-        public static final int powerRow03=0x7f0a007f;
-        public static final int powerRow04=0x7f0a0084;
-        public static final int powerRow05=0x7f0a0089;
-        public static final int powerRow08=0x7f0a0093;
-        public static final int powerRow09=0x7f0a0098;
-        public static final int powerVolume=0x7f0a00ae;
-        public static final int powerWindowCb=0x7f0a0096;
+        public static final int powerRow01=0x7f0a0081;
+        public static final int powerRow02=0x7f0a0083;
+        public static final int powerRow03=0x7f0a0084;
+        public static final int powerRow04=0x7f0a0089;
+        public static final int powerRow05=0x7f0a008e;
+        public static final int powerRow08=0x7f0a0098;
+        public static final int powerRow09=0x7f0a009d;
+        public static final int powerVolume=0x7f0a00b3;
+        public static final int powerWindowCb=0x7f0a009b;
         public static final int power_fm=0x7f0a001c;
-        public static final int power_layout=0x7f0a007b;
+        public static final int power_layout=0x7f0a0080;
         public static final int power_layoutBtn=0x7f0a000a;
-        public static final int priorityLabel=0x7f0a00a4;
-        public static final int rainSensorCb=0x7f0a008d;
+        public static final int priorityLabel=0x7f0a00a9;
+        public static final int rainSensorCb=0x7f0a0092;
         public static final int ratingLabel=0x7f0a0017;
         public static final int ratingPercent=0x7f0a0018;
         public static final int ratingProgress=0x7f0a0019;
-        public static final int remoteKeyCb=0x7f0a009d;
-        public static final int resetBtn=0x7f0a00b6;
-        public static final int saveBtn=0x7f0a00b4;
-        public static final int sealCb=0x7f0a0058;
-        public static final int seatBeltCb=0x7f0a0070;
-        public static final int seatBeltWarningCb=0x7f0a009a;
-        public static final int seatCb=0x7f0a0064;
-        public static final int seatSettingCb=0x7f0a0074;
-        public static final int setSteeringWheelCb=0x7f0a0094;
-        public static final int settingLabel=0x7f0a00a2;
-        public static final int settingRow01=0x7f0a00a1;
-        public static final int settingRow02=0x7f0a00a3;
-        public static final int settingRow03=0x7f0a00a5;
-        public static final int settingRow04=0x7f0a00a7;
-        public static final int settingRow05=0x7f0a00a8;
-        public static final int settingRow06=0x7f0a00aa;
-        public static final int settingRow07=0x7f0a00ac;
-        public static final int settingRow08=0x7f0a00af;
-        public static final int settingRow09=0x7f0a00b1;
-        public static final int settingRow10=0x7f0a00b3;
-        public static final int settingRow11=0x7f0a00b5;
-        public static final int settingRow12=0x7f0a00b7;
+        public static final int remoteKeyCb=0x7f0a00a2;
+        public static final int resetBtn=0x7f0a00bb;
+        public static final int saveBtn=0x7f0a00b9;
+        public static final int sealCb=0x7f0a005d;
+        public static final int seatBeltCb=0x7f0a0075;
+        public static final int seatBeltWarningCb=0x7f0a009f;
+        public static final int seatCb=0x7f0a0069;
+        public static final int seatSettingCb=0x7f0a0079;
+        public static final int setSteeringWheelCb=0x7f0a0099;
+        public static final int settingLabel=0x7f0a00a7;
+        public static final int settingRow01=0x7f0a00a6;
+        public static final int settingRow02=0x7f0a00a8;
+        public static final int settingRow03=0x7f0a00aa;
+        public static final int settingRow04=0x7f0a00ac;
+        public static final int settingRow05=0x7f0a00ad;
+        public static final int settingRow06=0x7f0a00af;
+        public static final int settingRow07=0x7f0a00b1;
+        public static final int settingRow08=0x7f0a00b4;
+        public static final int settingRow09=0x7f0a00b6;
+        public static final int settingRow10=0x7f0a00b8;
+        public static final int settingRow11=0x7f0a00ba;
+        public static final int settingRow12=0x7f0a00bc;
         public static final int setting_fm=0x7f0a0020;
-        public static final int setting_layout=0x7f0a00a0;
+        public static final int setting_layout=0x7f0a00a5;
         public static final int setting_layoutBtn=0x7f0a0016;
-        public static final int sideDoorsCb=0x7f0a006a;
-        public static final int sideDoorsLightCb=0x7f0a0086;
-        public static final int sideMirrorCb=0x7f0a0097;
-        public static final int tableRow0=0x7f0a0035;
-        public static final int tableRow1=0x7f0a0039;
-        public static final int tableRow2=0x7f0a003c;
-        public static final int tableRow3=0x7f0a003f;
-        public static final int tableRow4=0x7f0a0042;
-        public static final int tableRow5=0x7f0a0045;
-        public static final int tableRow6=0x7f0a0048;
-        public static final int tableRowText=0x7f0a0037;
-        public static final int thermometerCb=0x7f0a008a;
-        public static final int tirePartCb=0x7f0a005b;
-        public static final int tiresCb=0x7f0a0052;
-        public static final int tpowerRow06=0x7f0a008e;
-        public static final int tpowerRow07=0x7f0a005c;
-        public static final int transmissionCb=0x7f0a0068;
-        public static final int transmissionPositionCb=0x7f0a009f;
-        public static final int trunkReleaseCb=0x7f0a0071;
-        public static final int turnSteeringsteeringToEachEndCb=0x7f0a0092;
-        public static final int turnsignalCb=0x7f0a0087;
-        public static final int windShieldWiperCb=0x7f0a008c;
-        public static final int windowCb=0x7f0a0054;
-        public static final int woodConsoleCb=0x7f0a0065;
-        public static final int wrenchCb=0x7f0a005d;
+        public static final int sideDoorsCb=0x7f0a006f;
+        public static final int sideDoorsLightCb=0x7f0a008b;
+        public static final int sideMirrorCb=0x7f0a009c;
+        public static final int tableRow0=0x7f0a003a;
+        public static final int tableRow1=0x7f0a003e;
+        public static final int tableRow2=0x7f0a0041;
+        public static final int tableRow3=0x7f0a0044;
+        public static final int tableRow4=0x7f0a0047;
+        public static final int tableRow5=0x7f0a004a;
+        public static final int tableRow6=0x7f0a004d;
+        public static final int tableRowText=0x7f0a003c;
+        public static final int th=0x7f0a0022;
+        public static final int thermometerCb=0x7f0a008f;
+        public static final int tirePartCb=0x7f0a0060;
+        public static final int tiresCb=0x7f0a0057;
+        public static final int tpowerRow06=0x7f0a0093;
+        public static final int tpowerRow07=0x7f0a0061;
+        public static final int transmissionCb=0x7f0a006d;
+        public static final int transmissionPositionCb=0x7f0a00a4;
+        public static final int trunkReleaseCb=0x7f0a0076;
+        public static final int turnSteeringsteeringToEachEndCb=0x7f0a0097;
+        public static final int turnsignalCb=0x7f0a008c;
+        public static final int us=0x7f0a0023;
+        public static final int windShieldWiperCb=0x7f0a0091;
+        public static final int windowCb=0x7f0a0059;
+        public static final int woodConsoleCb=0x7f0a006a;
+        public static final int wrenchCb=0x7f0a0062;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int document_fm=0x7f030001;
-        public static final int engine_fm=0x7f030002;
-        public static final int enginesub_fm=0x7f030003;
-        public static final int exterior_fm=0x7f030004;
-        public static final int interior_fm=0x7f030005;
-        public static final int power_fm=0x7f030006;
-        public static final int setting_fm=0x7f030007;
+        public static final int change_lang=0x7f030001;
+        public static final int document_fm=0x7f030002;
+        public static final int engine_fm=0x7f030003;
+        public static final int enginesub_fm=0x7f030004;
+        public static final int exterior_fm=0x7f030005;
+        public static final int interior_fm=0x7f030006;
+        public static final int power_fm=0x7f030007;
+        public static final int setting_fm=0x7f030008;
     }
     public static final class menu {
         public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f070057;
-        public static final int app_name=0x7f070056;
         public static final int back=0x7f070001;
-        public static final int backBtn=0x7f070059;
-        public static final int changeLanguage=0x7f07004a;
-        public static final int doc-actTaxLabel=0x7f070039;
-        public static final int doc-bill=0x7f07003a;
-        public static final int doc-carManual=0x7f07003e;
-        public static final int doc-carPartPaper=0x7f07003d;
-        public static final int doc-gift=0x7f070040;
-        public static final int doc-insurance=0x7f070038;
-        public static final int doc-licenseManual=0x7f07003c;
-        public static final int doc-licensePlate=0x7f07003b;
-        public static final int doc-licenseRegister=0x7f07003f;
+        public static final int changeLanguage=0x7f070048;
+        public static final int doc_actTaxLabel=0x7f070039;
+        public static final int doc_bill=0x7f07003a;
+        public static final int doc_carManual=0x7f07003e;
+        public static final int doc_carPartPaper=0x7f07003d;
+        public static final int doc_gift=0x7f070040;
+        public static final int doc_insurance=0x7f070038;
+        public static final int doc_licenseManual=0x7f07003c;
+        public static final int doc_licensePlate=0x7f07003b;
+        public static final int doc_licenseRegister=0x7f07003f;
         public static final int document=0x7f070037;
-        public static final int documentLabel=0x7f07005e;
-        /**  string name="power">电力系统</string 
+        /**  __ string name="power">电力系统</string __ 
          */
-        public static final int engine=0x7f070044;
-        public static final int engine-backHood=0x7f07004c;
-        public static final int engine-belt=0x7f070051;
-        public static final int engine-brakeOil=0x7f07004e;
-        public static final int engine-engineOil=0x7f07004f;
-        public static final int engine-gear=0x7f070052;
-        /**  string name="engine">引擎</string 
+        public static final int engine=0x7f070049;
+        public static final int engine_backHood=0x7f07004b;
+        public static final int engine_belt=0x7f070050;
+        public static final int engine_brakeOil=0x7f07004d;
+        public static final int engine_engineOil=0x7f07004e;
+        public static final int engine_gear=0x7f070051;
+        /** __ string name="engine">引擎</string __
          */
-        public static final int engine-hood=0x7f07004b;
-        public static final int engine-liquidLevel=0x7f070053;
-        public static final int engine-soundIn=0x7f070055;
-        public static final int engine-soundOut=0x7f070054;
-        public static final int engine-underEngine=0x7f07004d;
-        public static final int engine-waterCoolant=0x7f070050;
-        public static final int engineLabel=0x7f07005a;
-        public static final int engine_text=0x7f070058;
+        public static final int engine_hood=0x7f07004a;
+        public static final int engine_liquidLevel=0x7f070052;
+        public static final int engine_soundIn=0x7f070054;
+        public static final int engine_soundOut=0x7f070053;
+        public static final int engine_underEngine=0x7f07004c;
+        public static final int engine_waterCoolant=0x7f07004f;
         public static final int exterior=0x7f070000;
-        public static final int exteriorLabel=0x7f07005c;
-        public static final int high=0x7f070061;
-        public static final int inside=0x7f070043;
-        public static final int inside-accelerator=0x7f070019;
-        public static final int inside-backDoor=0x7f070015;
-        public static final int inside-brakePedal=0x7f070018;
-        public static final int inside-carpet=0x7f070012;
-        public static final int inside-console=0x7f07000d;
-        public static final int inside-curtain=0x7f070013;
-        public static final int inside-dashBoard=0x7f070011;
-        public static final int inside-handBrake=0x7f07001a;
-        public static final int inside-lidOil=0x7f070016;
-        public static final int inside-seat=0x7f07000c;
-        public static final int inside-seatBelt=0x7f070014;
-        public static final int inside-setSeat=0x7f070017;
-        public static final int inside-sideDoors=0x7f070010;
-        public static final int inside-steeringWheel=0x7f07000e;
-        public static final int inside-transmission=0x7f07000f;
+        public static final int inside=0x7f070056;
+        public static final int inside_accelerator=0x7f070019;
+        public static final int inside_backDoor=0x7f070015;
+        public static final int inside_brakePedal=0x7f070018;
+        public static final int inside_carpet=0x7f070012;
+        public static final int inside_console=0x7f07000d;
+        public static final int inside_curtain=0x7f070013;
+        public static final int inside_dashBoard=0x7f070011;
+        public static final int inside_handBrake=0x7f07001a;
+        public static final int inside_lidOil=0x7f070016;
+        public static final int inside_seat=0x7f07000c;
+        public static final int inside_seatBelt=0x7f070014;
+        public static final int inside_setSeat=0x7f070017;
+        public static final int inside_sideDoors=0x7f070010;
+        public static final int inside_steeringWheel=0x7f07000e;
+        public static final int inside_transmission=0x7f07000f;
         public static final int interior=0x7f07000b;
-        public static final int interiorLabel=0x7f07005d;
-        public static final int languageBtn=0x7f070064;
-        public static final int lowhigh=0x7f070060;
-        public static final int outside=0x7f070042;
-        public static final int outside-color=0x7f070002;
-        public static final int outside-doorHood=0x7f070004;
-        public static final int outside-jack=0x7f070005;
-        public static final int outside-light=0x7f070008;
-        public static final int outside-seal=0x7f070009;
-        public static final int outside-tirePart=0x7f07000a;
-        public static final int outside-tires=0x7f070007;
-        public static final int outside-window=0x7f070003;
-        public static final int outside-wrench=0x7f070006;
+        public static final int lowhigh=0x7f070043;
+        public static final int outside=0x7f070055;
+        public static final int outside_color=0x7f070002;
+        public static final int outside_doorHood=0x7f070004;
+        public static final int outside_jack=0x7f070005;
+        public static final int outside_light=0x7f070008;
+        public static final int outside_seal=0x7f070009;
+        public static final int outside_tirePart=0x7f07000a;
+        public static final int outside_tires=0x7f070007;
+        public static final int outside_window=0x7f070003;
+        public static final int outside_wrench=0x7f070006;
         public static final int power=0x7f07001b;
-        public static final int power-air=0x7f070023;
-        public static final int power-antiFoggyBack=0x7f070029;
-        public static final int power-antiFoggySide=0x7f07002a;
-        public static final int power-cabinSeatLight=0x7f070020;
-        public static final int power-carStereo=0x7f07002d;
-        public static final int power-centralLock=0x7f070035;
-        public static final int power-clock=0x7f070033;
-        public static final int power-dashBoardLight=0x7f07001f;
-        public static final int power-dim=0x7f07001d;
-        public static final int power-electronicWindow=0x7f07002e;
-        public static final int power-headLight=0x7f07001c;
-        public static final int power-highBeam=0x7f07001e;
-        public static final int power-horn=0x7f070025;
-        public static final int power-rainSensor=0x7f070027;
-        public static final int power-remoteKey=0x7f070034;
-        public static final int power-sideDoorLight=0x7f070021;
-        public static final int power-sideMirror=0x7f07002f;
-        public static final int power-steeringWheelSet=0x7f07002c;
-        public static final int power-steeringWheelTest=0x7f07002b;
-        public static final int power-thermometer=0x7f070024;
-        public static final int power-thirdBrakeLight=0x7f070028;
-        public static final int power-transmissionPosition=0x7f070036;
-        public static final int power-turnSignal=0x7f070022;
-        public static final int power-warnDoor=0x7f070030;
-        public static final int power-warnHandBrake=0x7f070032;
-        public static final int power-warnSeatBelt=0x7f070031;
-        public static final int power-wipe=0x7f070026;
-        public static final int powerLabel=0x7f07005b;
-        /**  string name="document">文件</string 
+        public static final int power_air=0x7f070023;
+        public static final int power_antiFoggyBack=0x7f070029;
+        public static final int power_antiFoggySide=0x7f07002a;
+        public static final int power_cabinSeatLight=0x7f070020;
+        public static final int power_carStereo=0x7f07002d;
+        public static final int power_centralLock=0x7f070035;
+        public static final int power_clock=0x7f070033;
+        public static final int power_dashBoardLight=0x7f07001f;
+        public static final int power_dim=0x7f07001d;
+        public static final int power_electronicWindow=0x7f07002e;
+        public static final int power_headLight=0x7f07001c;
+        public static final int power_highBeam=0x7f07001e;
+        public static final int power_horn=0x7f070025;
+        public static final int power_rainSensor=0x7f070027;
+        public static final int power_remoteKey=0x7f070034;
+        public static final int power_sideDoorLight=0x7f070021;
+        public static final int power_sideMirror=0x7f07002f;
+        public static final int power_steeringWheelSet=0x7f07002c;
+        public static final int power_steeringWheelTest=0x7f07002b;
+        public static final int power_thermometer=0x7f070024;
+        public static final int power_thirdBrakeLight=0x7f070028;
+        public static final int power_transmissionPosition=0x7f070036;
+        public static final int power_turnSignal=0x7f070022;
+        public static final int power_warnDoor=0x7f070030;
+        public static final int power_warnHandBrake=0x7f070032;
+        public static final int power_warnSeatBelt=0x7f070031;
+        public static final int power_wipe=0x7f070026;
+        /** __ string name="document">文件</string __
          */
-        public static final int priority=0x7f070045;
-        public static final int rating=0x7f070065;
-        public static final int reset=0x7f070049;
-        public static final int resetBtn=0x7f070063;
-        public static final int save=0x7f070048;
-        public static final int saveBtn=0x7f070062;
+        public static final int priority=0x7f070042;
+        public static final int reset=0x7f070047;
+        public static final int save=0x7f070046;
         public static final int setting=0x7f070041;
-        public static final int setting-high=0x7f070047;
-        public static final int setting-low=0x7f070046;
-        public static final int setting_ratio=0x7f07005f;
+        public static final int setting_high=0x7f070045;
+        public static final int setting_low=0x7f070044;
     }
     public static final class style {
         /** 
@@ -408,9 +408,53 @@ public final class R {
         res/values-v11/styles.xml on API 14+ devices.
     
  API 14 theme customizations can go here. 
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
          */
         public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f080001;

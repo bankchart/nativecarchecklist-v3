@@ -14,6 +14,7 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -73,10 +74,24 @@ public class MainActivity extends Activity {
 	private SeekBar exteriorVolume;
 	private SeekBar interiorVolume;
 	private SeekBar documentVolume;
-	
+
 	private Locale myLocale;
 
-	private Button saveBtn, resetBtn;
+	private Button saveBtn, resetBtn, languageBtn;
+
+	public void setLocale(String lang) {
+		Toast.makeText(getApplicationContext(), lang, Toast.LENGTH_LONG).show();
+
+		myLocale = new Locale(lang);
+		Resources res = getResources();
+		DisplayMetrics dm = res.getDisplayMetrics();
+		Configuration conf = res.getConfiguration();
+		conf.locale = myLocale;
+		res.updateConfiguration(conf, dm);
+		Intent intent = getIntent();
+		finish();
+		startActivity(intent);
+	}
 
 	public void onClickChecked(View v) {
 		String yourCheck = (String) v.getTag();
@@ -297,13 +312,17 @@ public class MainActivity extends Activity {
 			if (menuIsShow[i]) {
 				// FragmentTransaction ft;
 				switch (i) {
-				case 0:			
-					
-					/*Fragment powerFm = getFragmentManager().findFragmentById(R.id.power_fm);
-					FragmentTransaction fts = getFragmentManager().beginTransaction();
-					fts.setCustomAnimations(R.animator.power_motion_in, R.animator.power_motion_out);
-					fts.replace(R.id.engine_fm, powerFm, null);
-					fts.commit();*/
+				case 0:
+
+					/*
+					 * Fragment powerFm =
+					 * getFragmentManager().findFragmentById(R.id.power_fm);
+					 * FragmentTransaction fts =
+					 * getFragmentManager().beginTransaction();
+					 * fts.setCustomAnimations(R.animator.power_motion_in,
+					 * R.animator.power_motion_out); fts.replace(R.id.engine_fm,
+					 * powerFm, null); fts.commit();
+					 */
 					FragmentTransaction ft_0;
 					getPreferences(MODE_PRIVATE).edit().putInt("already", 1)
 							.commit();
@@ -316,7 +335,7 @@ public class MainActivity extends Activity {
 					ft_0.hide(powerFm);
 					ft_0.commit();
 					break;
-				case 1:					
+				case 1:
 					FragmentTransaction ft_1;
 					getPreferences(MODE_PRIVATE).edit().putInt("already", 1)
 							.commit();
@@ -386,24 +405,31 @@ public class MainActivity extends Activity {
 			menuIsShow[i] = false;
 		}
 	}
-	
-	public void setLocale(String lang) {
-		 
-        myLocale = new Locale(lang);
-        Resources res = getResources();
-        //DisplayMetrics dm = res.getDisplayMetrics();
-        Configuration conf = res.getConfiguration();
-        conf.locale = myLocale;
-        res.updateConfiguration(conf, null);
-        //Intent refresh = new Intent(this, AndroidLocalize.class);
-        onCreate(null);
-        //startActivity(refresh);
-    }
+
+	/*
+	 * public void setLocale(String lang) {
+	 * 
+	 * myLocale = new Locale(lang); Resources res = getResources();
+	 * //DisplayMetrics dm = res.getDisplayMetrics(); Configuration conf =
+	 * res.getConfiguration(); conf.locale = myLocale;
+	 * res.updateConfiguration(conf, null); //Intent refresh = new Intent(this,
+	 * AndroidLocalize.class); onCreate(null); //startActivity(refresh); }
+	 */
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		Intent i = getIntent();
+		String lang = i.getStringExtra("lang");
+		if ("lang".equals(lang)) {
+			Intent refresh = new Intent(this, MainActivity.class);
+			i.putExtra("lang", "");
+			finish();
+			startActivity(refresh);// Start the same Activity
+
+		}
 
 		ratingProgress = (ProgressBar) findViewById(R.id.ratingProgress);
 
@@ -426,6 +452,8 @@ public class MainActivity extends Activity {
 		exteriorVolume = (SeekBar) findViewById(R.id.exteriorVolume);
 		interiorVolume = (SeekBar) findViewById(R.id.interiorVolume);
 		documentVolume = (SeekBar) findViewById(R.id.documentVolume);
+
+		languageBtn = (Button) findViewById(R.id.languageBtn);
 
 		engineProgressText.setText("0 %");
 		powerProgressText.setText("0 %");
@@ -599,9 +627,10 @@ public class MainActivity extends Activity {
 		});
 
 		// power**********************************************************************
-	
+
 		powerLayoutBtn.setOnClickListener(new OnClickListener() {
-			@SuppressLint("NewApi") public void onClick(View v) {
+			@SuppressLint("NewApi")
+			public void onClick(View v) {
 				int compareMenu = -1;
 				for (int i = 0; i < menuIsShow.length; i++) {
 					if (menuIsShow[i]) {
@@ -610,16 +639,19 @@ public class MainActivity extends Activity {
 				}
 				if (compareMenu != POWER_INDEX) {
 					checkSlide();
-					/*FragmentTransaction fragmentTransaction =
-						      getFragmentManager().beginTransaction();
-
-						    fragmentTransaction.setCustomAnimations(
-						      R.animator.power_motion_in, R.animator.power_motion_out,
-						      R.animator.power_motion_in, R.animator.power_motion_out);
-						    Fragment powerFm = getFragmentManager().findFragmentById(R.id.power_fm);
-						    fragmentTransaction.replace(R.id.engine_fm, powerFm);
-						    fragmentTransaction.addToBackStack(null);
-						    fragmentTransaction.commit();*/
+					/*
+					 * FragmentTransaction fragmentTransaction =
+					 * getFragmentManager().beginTransaction();
+					 * 
+					 * fragmentTransaction.setCustomAnimations(
+					 * R.animator.power_motion_in, R.animator.power_motion_out,
+					 * R.animator.power_motion_in, R.animator.power_motion_out);
+					 * Fragment powerFm =
+					 * getFragmentManager().findFragmentById(R.id.power_fm);
+					 * fragmentTransaction.replace(R.id.engine_fm, powerFm);
+					 * fragmentTransaction.addToBackStack(null);
+					 * fragmentTransaction.commit();
+					 */
 				}
 				menuToggle(R.animator.power_motion_in,
 						R.animator.power_motion_out, R.id.power_fm, POWER_INDEX);
@@ -721,6 +753,11 @@ public class MainActivity extends Activity {
 
 		setting_layoutBtn.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
+				/*
+				 * if (myLocale.getDisplayCountry() != null)
+				 * Toast.makeText(getApplicationContext(),
+				 * myLocale.getDisplayCountry(), Toast.LENGTH_LONG) .show();
+				 */
 				int compareMenu = -1;
 				for (int i = 0; i < menuIsShow.length; i++) {
 					if (menuIsShow[i]) {
@@ -747,6 +784,16 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				resetPriority();
+			}
+		});
+
+		languageBtn.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getApplicationContext(),
+						ChangeLanguage.class);
+				startActivity(i);
+				finish();
 			}
 		});
 

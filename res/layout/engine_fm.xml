@@ -85,7 +85,7 @@
 			    android:layout_marginLeft="20dp"
 			    android:layout_marginTop="10dp"
 			    android:background="@drawable/bg_button"
-			    android:text="@string/backBtn"
+			    android:text="@string/back"
 			    android:textAppearance="?android:attr/textAppearanceMedium" />
             	
         </TableRow>
@@ -98,7 +98,7 @@
 			    android:id="@+id/engineLabel" 
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
-			    android:text="@string/engineLabel" 
+			    android:text="@string/engine" 
 			    android:layout_marginTop="20dp"
 			    android:layout_marginLeft="20dp"
 			    android:layout_marginBottom="50dp"
@@ -116,7 +116,7 @@
                 android:id="@+id/checkBox1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hood"
+                android:text="@string/engine_hood"
                 android:onClick="onClickChecked"
                 android:tag="engine" />
 
@@ -124,7 +124,7 @@
                 android:id="@+id/checkBox2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="trunk"
+                android:text="@string/engine_backHood"
                 android:onClick="onClickChecked"
                 android:tag="engine" />
         </TableRow>
@@ -139,7 +139,7 @@
                 android:id="@+id/checkBox3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="The engine"
+                android:text="@string/engine_underEngine"
                 android:onClick="onClickChecked"
                 android:tag="engine" />
 
@@ -147,7 +147,7 @@
                 android:id="@+id/checkBox4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Water coolant"
+                android:text="@string/engine_waterCoolant"
                 android:onClick="onClickChecked"
                 android:tag="engine" />
         </TableRow>
@@ -162,7 +162,7 @@
                 android:id="@+id/checkBox5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Brake fluid"
+                android:text="@string/engine_brakeOil"
                 android:onClick="onClickChecked"
                 android:tag="engine" />
 
@@ -170,7 +170,7 @@
                 android:id="@+id/checkBox6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Engine oil"
+                android:text="@string/engine_engineOil"
                 android:onClick="onClickChecked"
                 android:tag="engine" />
         </TableRow>
@@ -185,7 +185,7 @@
                 android:id="@+id/checkBox7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gear oil"
+                android:text="@string/engine_gear"
                 android:onClick="onClickChecked"
                 android:tag="engine" />
 
@@ -193,7 +193,7 @@
                 android:id="@+id/checkBox8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Belt"
+                android:text="@string/engine_belt"
                 android:onClick="onClickChecked"
                 android:tag="engine" />
         </TableRow>
@@ -208,7 +208,7 @@
                 android:id="@+id/checkBox9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Engine sound"
+                android:text="@string/engine_soundOut"
                 android:onClick="onClickChecked"
                 android:tag="engine" />
 
@@ -216,7 +216,7 @@
                 android:id="@+id/checkBox10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sound in carbine"
+                android:text="@string/engine_soundIn"
                 android:onClick="onClickChecked"
                 android:tag="engine" />
         </TableRow>
@@ -232,7 +232,7 @@
                 android:id="@+id/checkBox11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wipe liquid level"
+                android:text="@string/engine_liquidLevel"
                 android:onClick="onClickChecked"
                 android:tag="engine" />
         </TableRow>
