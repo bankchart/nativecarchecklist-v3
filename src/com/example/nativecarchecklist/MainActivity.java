@@ -91,6 +91,11 @@ public class MainActivity extends Activity {
 
 	private Button saveBtn, resetBtn, languageBtn;
 
+	private PowerDrawView powerLine;
+	private EngineDrawView engineLine;
+	private ExteriorDrawView exteriorLine;
+	private InteriorDrawView interiorLine;
+	private DocumentDrawView documentLine;
 	/*
 	 * @Override public void onBackPressed(){
 	 * Toast.makeText(getApplicationContext()
@@ -431,7 +436,13 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
+		
+		powerLine = new PowerDrawView(getApplicationContext());
+		engineLine = new EngineDrawView(getApplicationContext());
+		exteriorLine = new ExteriorDrawView(getApplicationContext());
+		interiorLine = new InteriorDrawView(getApplicationContext());
+		documentLine = new DocumentDrawView(getApplicationContext());
+				
 		Intent i = getIntent();
 		String lang = i.getStringExtra("lang");
 		if ("lang".equals(lang)) {
@@ -552,7 +563,7 @@ public class MainActivity extends Activity {
 		};
 
 		RelativeLayout mainLayout = (RelativeLayout) findViewById(R.id.mainlayout);
-
+		
 		mainLayout.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -562,6 +573,13 @@ public class MainActivity extends Activity {
 
 		});
 
+		// Canvas create line		
+		mainLayout.addView(powerLine);		
+		mainLayout.addView(engineLine);
+		mainLayout.addView(exteriorLine);
+		mainLayout.addView(interiorLine);
+		mainLayout.addView(documentLine);
+		
 		FragmentTransaction ft = getFragmentManager().beginTransaction();
 		FragmentManager fm = getFragmentManager();
 
