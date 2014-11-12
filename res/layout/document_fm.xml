@@ -55,7 +55,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/doc_insurance"
                 android:onClick="onClickChecked"
-                android:tag="document" />
+                android:tag="document-0" />
 
             <CheckBox
                 android:id="@+id/actTaxCb"
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/doc_actTaxLabel"
                 android:onClick="onClickChecked"
-                android:tag="document" />
+                android:tag="document-1" />
         </TableRow>
 
         <TableRow
@@ -78,7 +78,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/doc_bill"
                 android:onClick="onClickChecked"
-                android:tag="document" />
+                android:tag="document-2" />
 
             <CheckBox
                 android:id="@+id/licensePlateCb"
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/doc_licensePlate"
                 android:onClick="onClickChecked"
-                android:tag="document" />
+                android:tag="document-3" />
         </TableRow>
 
         <TableRow
@@ -101,7 +101,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/doc_licenseManual"
                 android:onClick="onClickChecked"
-                android:tag="document" />
+                android:tag="document-4" />
 
             <CheckBox
                 android:id="@+id/carPartPaperCb"
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/doc_carPartPaper" 
                 android:onClick="onClickChecked"
-                android:tag="document" />
+                android:tag="document-5" />
         </TableRow>
 
         <TableRow
@@ -124,7 +124,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/doc_carManual"
                 android:onClick="onClickChecked"
-                android:tag="document" />
+                android:tag="document-6" />
 
             <CheckBox
                 android:id="@+id/licenseRegisterCb"
@@ -132,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/doc_licenseRegister"
                 android:onClick="onClickChecked"
-                android:tag="document" />
+                android:tag="document-7" />
         </TableRow>
         
         <TableRow
@@ -148,7 +148,7 @@
                 android:layout_marginBottom="30dp"
                 android:text="@string/doc_gift"
                 android:onClick="onClickChecked"
-                android:tag="document" />
+                android:tag="document-8" />
            
         </TableRow>
     </TableLayout>

@@ -55,7 +55,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/outside_color"
                 android:onClick="onClickChecked"
-                android:tag="exterior" />
+                android:tag="exterior-0" />
 
             <CheckBox
                 android:id="@+id/tiresCb"
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/outside_tires"
                 android:onClick="onClickChecked"
-                android:tag="exterior" />
+                android:tag="exterior-1" />
             
         </TableRow>
 
@@ -79,7 +79,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/outside_window"
                 android:onClick="onClickChecked"
-                android:tag="exterior" />
+                android:tag="exterior-2" />
 
             <CheckBox
                 android:id="@+id/LightCb"
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/outside_light"
                 android:onClick="onClickChecked"
-                android:tag="exterior" />
+                android:tag="exterior-3" />
 		</TableRow>
 		
         <TableRow
@@ -101,7 +101,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/outside_doorHood"
                 android:onClick="onClickChecked"
-                android:tag="exterior" />
+                android:tag="exterior-4" />
 
             <CheckBox
                 android:id="@+id/sealCb"
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/outside_seal"
                 android:onClick="onClickChecked"
-                android:tag="exterior" />
+                android:tag="exterior-5" />
         </TableRow>
 
         <TableRow
@@ -124,7 +124,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/outside_jack"
                 android:onClick="onClickChecked"
-                android:tag="exterior" />
+                android:tag="exterior-6" />
 
             <CheckBox
                 android:id="@+id/tirePartCb"
@@ -132,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/outside_tirePart"
                 android:onClick="onClickChecked"
-                android:tag="exterior" />
+                android:tag="exterior-7" />
 		</TableRow>
             
 
@@ -148,7 +148,7 @@
                 android:layout_marginBottom="30dp"
                 android:text="@string/outside_wrench"
                 android:onClick="onClickChecked"
-                android:tag="exterior" />
+                android:tag="exterior-8" />
         </TableRow>
 
      

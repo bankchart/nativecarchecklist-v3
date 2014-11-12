@@ -1,20 +1,15 @@
 package com.example.nativecarchecklist;
 
-import java.util.Locale;
-
 import android.os.Bundle;
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.app.AlertDialog.Builder;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Configuration;
-import android.content.res.Resources;
-import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -45,11 +40,30 @@ public class MainActivity extends Activity {
 	private final int DOCUMENT_SIZE = 9;
 	private final int DEFAULT_PRIORITY = 3;
 
+	/*
+	 * private final String POWER_CB = "power"; private final String ENGINE_CB =
+	 * "engine"; private final String EXTERIOR_CB = "exterior"; private final
+	 * String INTERIOR_CB = "interior"; private final String DOCUMENT_CB =
+	 * "document"; private final String SETTING_CB = "setting";
+	 */
+
 	private DetailList powerList = new DetailList("power", POWER_SIZE);
 	private DetailList engineList = new DetailList("engine", ENGINE_SIZE);
 	private DetailList exteriorList = new DetailList("exterior", EXTERIOR_SIZE);
 	private DetailList interiorList = new DetailList("interior", INTERIOR_SIZE);
 	private DetailList documentList = new DetailList("document", DOCUMENT_SIZE);
+
+	/*
+	 * private RememberCheckBoxState powerRemember = new
+	 * RememberCheckBoxState(this, POWER_CB, POWER_SIZE); private
+	 * RememberCheckBoxState engineRemember = new RememberCheckBoxState(this,
+	 * ENGINE_CB, ENGINE_SIZE); private RememberCheckBoxState exteriorRemember =
+	 * new RememberCheckBoxState(this, EXTERIOR_CB, EXTERIOR_SIZE); private
+	 * RememberCheckBoxState interiorRemember = new RememberCheckBoxState(this,
+	 * INTERIOR_CB, INTERIOR_SIZE); private RememberCheckBoxState
+	 * documentRemember = new RememberCheckBoxState(this, DOCUMENT_CB,
+	 * DOCUMENT_SIZE);
+	 */
 
 	private RatingCheckList rating = new RatingCheckList();
 
@@ -75,28 +89,22 @@ public class MainActivity extends Activity {
 	private SeekBar interiorVolume;
 	private SeekBar documentVolume;
 
-	private Locale myLocale;
-
 	private Button saveBtn, resetBtn, languageBtn;
 
-	public void setLocale(String lang) {
-		Toast.makeText(getApplicationContext(), lang, Toast.LENGTH_LONG).show();
-
-		myLocale = new Locale(lang);
-		Resources res = getResources();
-		DisplayMetrics dm = res.getDisplayMetrics();
-		Configuration conf = res.getConfiguration();
-		conf.locale = myLocale;
-		res.updateConfiguration(conf, dm);
-		Intent intent = getIntent();
-		finish();
-		startActivity(intent);
-	}
+	/*
+	 * @Override public void onBackPressed(){
+	 * Toast.makeText(getApplicationContext()
+	 * ,"back pressed.",Toast.LENGTH_LONG).show(); }
+	 */
 
 	public void onClickChecked(View v) {
 		String yourCheck = (String) v.getTag();
+		String[] tmpCheck = yourCheck.split("-");
+		// String indexCheck = tmpCheck[1];
+		yourCheck = tmpCheck[0];
 		System.out.println("test");
 		if ("power".equals(yourCheck)) {
+			// powerRemember.checkBoxMapping(v, indexCheck);
 			double divide = powerList.divideProgress();
 			int percentValue;
 			double tmp;
@@ -118,6 +126,7 @@ public class MainActivity extends Activity {
 			powerProgress.setProgress(percentValue);
 			powerProgressText.setText(percentValue + " %");
 		} else if ("engine".equals(yourCheck)) {
+			// engineRemember.checkBoxMapping(v, indexCheck);
 			double divide = engineList.divideProgress();
 			int percentValue;
 			double tmp;
@@ -139,6 +148,7 @@ public class MainActivity extends Activity {
 			engineProgress.setProgress(percentValue);
 			engineProgressText.setText(percentValue + " %");
 		} else if ("exterior".equals(yourCheck)) {
+			// exteriorRemember.checkBoxMapping(v, indexCheck);
 			double divide = exteriorList.divideProgress();
 			int percentValue;
 			double tmp;
@@ -160,6 +170,7 @@ public class MainActivity extends Activity {
 			exteriorProgress.setProgress(percentValue);
 			exteriorProgressText.setText(percentValue + " %");
 		} else if ("interior".equals(yourCheck)) {
+			// interiorRemember.checkBoxMapping(v, indexCheck);
 			double divide = interiorList.divideProgress();
 			int percentValue;
 			double tmp;
@@ -181,6 +192,7 @@ public class MainActivity extends Activity {
 			interiorProgress.setProgress(percentValue);
 			interiorProgressText.setText(percentValue + " %");
 		} else { // document
+			// documentRemember.checkBoxMapping(v, indexCheck);
 			double divide = documentList.divideProgress();
 			int percentValue;
 			double tmp;
@@ -313,7 +325,6 @@ public class MainActivity extends Activity {
 				// FragmentTransaction ft;
 				switch (i) {
 				case 0:
-
 					/*
 					 * Fragment powerFm =
 					 * getFragmentManager().findFragmentById(R.id.power_fm);
@@ -428,7 +439,8 @@ public class MainActivity extends Activity {
 			i.putExtra("lang", "");
 			finish();
 			startActivity(refresh);// Start the same Activity
-
+			/*Toast.makeText(getApplicationContext(), "equals lang", Toast.LENGTH_SHORT)
+			.show();*/
 		}
 
 		ratingProgress = (ProgressBar) findViewById(R.id.ratingProgress);
@@ -790,10 +802,29 @@ public class MainActivity extends Activity {
 		languageBtn.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(getApplicationContext(),
+				AlertDialog.Builder confirm = new AlertDialog.Builder(
+						MainActivity.this);
+				/*Intent i = new Intent(getApplicationContext(),
 						ChangeLanguage.class);
 				startActivity(i);
-				finish();
+				finish();*/
+
+				confirm.setTitle("Do you want to change a language ?");
+				confirm.setMessage("Your check list will leave when you change a language");
+				confirm.setNegativeButton("Cancel", null);
+				confirm.setPositiveButton("Ok",
+						new AlertDialog.OnClickListener() {
+
+							@Override
+							public void onClick(DialogInterface dialog,
+									int which) {
+								Intent i = new Intent(getApplicationContext(),
+										ChangeLanguage.class);
+								startActivity(i);
+								finish();
+							}
+						});
+				confirm.show();
 			}
 		});
 

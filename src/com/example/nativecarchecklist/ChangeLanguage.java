@@ -1,11 +1,10 @@
 package com.example.nativecarchecklist;
 
-import java.util.Locale;
+import java.util.Locale; 
 
 
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -70,7 +69,7 @@ public class ChangeLanguage extends Activity {
 	}
 
 	public void setLocale(String lang) {
-		Toast.makeText(getApplicationContext(), lang, Toast.LENGTH_LONG).show();
+		//Toast.makeText(getApplicationContext(), lang, Toast.LENGTH_LONG).show();
 
 		myLocale = new Locale(lang);
 		Resources res = getResources();

@@ -55,7 +55,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/power_headLight"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-0" />
 
             <CheckBox
                 android:id="@+id/dimmerLightCb"
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_dim"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-1" />
 
             <CheckBox
                 android:id="@+id/highBeamCb"
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_highBeam"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-2" />
 
             <CheckBox
                 android:id="@+id/dashBoardLightCb"
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_dashBoardLight"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-3" />
         </TableRow>
 
         <TableRow
@@ -94,7 +94,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/power_cabinSeatLight"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-4" />
 
             <CheckBox
                 android:id="@+id/sideDoorsLightCb"
@@ -102,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_sideDoorLight"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-5" />
 
             <CheckBox
                 android:id="@+id/turnsignalCb"
@@ -110,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_turnSignal"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-6" />
 
             <CheckBox
                 android:id="@+id/airConditionCb"
@@ -118,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_air"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-7" />
         </TableRow>
 
         <TableRow
@@ -133,7 +133,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/power_thermometer"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-8" />
 
             <CheckBox
                 android:id="@+id/hornCb"
@@ -141,7 +141,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_horn"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-9" />
 
             <CheckBox
                 android:id="@+id/windShieldWiperCb"
@@ -149,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_wipe"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-10" />
 
             <CheckBox
                 android:id="@+id/rainSensorCb"
@@ -157,7 +157,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_rainSensor"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-11" />
         </TableRow>
 
         <TableRow
@@ -172,7 +172,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/power_thirdBrakeLight"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-12" />
 
             <CheckBox
                 android:id="@+id/defoggerBackCb"
@@ -180,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_antiFoggyBack"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-13" />
 
             <CheckBox
                 android:id="@+id/defoggerSideCb"
@@ -188,7 +188,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_antiFoggySide"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-14" />
 
             <CheckBox
                 android:id="@+id/turnSteeringsteeringToEachEndCb"
@@ -197,7 +197,7 @@
                 android:layout_marginRight="20dp"
                 android:text="@string/power_steeringWheelTest"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-15" />
         </TableRow>
 
         <TableRow
@@ -212,7 +212,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/power_steeringWheelSet"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-16" />
 
             <CheckBox
                 android:id="@+id/carStereoCDCb"
@@ -220,7 +220,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_carStereo"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-17" />
 
             <CheckBox
                 android:id="@+id/powerWindowCb"
@@ -228,7 +228,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_electronicWindow"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-18" />
 
             <CheckBox
                 android:id="@+id/sideMirrorCb"
@@ -236,7 +236,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_sideMirror"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-19" />
         </TableRow>
 
         <TableRow
@@ -251,7 +251,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/power_warnDoor"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-20" />
 
             <CheckBox
                 android:id="@+id/seatBeltWarningCb"
@@ -259,7 +259,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_warnSeatBelt"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-21" />
 
             <CheckBox
                 android:id="@+id/handBrakeWarningCb"
@@ -267,7 +267,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_warnHandBrake"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-22" />
 
             <CheckBox
                 android:id="@+id/digitalClockCb"
@@ -275,7 +275,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_clock"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-23" />
         </TableRow>
 
         <TableRow
@@ -290,7 +290,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="@string/power_remoteKey"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-24" />
 
             <CheckBox
                 android:id="@+id/centralLockCb"
@@ -298,7 +298,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_centralLock"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-25" />
 
             <CheckBox
                 android:id="@+id/transmissionPositionCb"
@@ -306,7 +306,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/power_transmissionPosition"
                 android:onClick="onClickChecked"
-                android:tag="power" />
+                android:tag="power-26" />
         </TableRow>
     </TableLayout>
 

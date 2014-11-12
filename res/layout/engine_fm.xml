@@ -4,69 +4,6 @@
     android:layout_centerHorizontal="true"
     android:orientation="vertical" >
 
-    <!--
-    LinearLayout
-        android:id="@+id/engine_linear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:background="@drawable/bg_dialog"
-        android:gravity="center_horizontal"
-        android:orientation="vertical" >
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="-260dp"
-            android:layout_marginTop="10dp"
-            android:text="Button" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="-260dp"
-            android:text="@string/engine_text"
-            android:textAlignment="center"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <CheckBox
-            android:id="@+id/checkBox1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
-      
-
-    </LinearLayout
-    -->
-
     <TableLayout
         android:id="@+id/engine_layout"
         android:layout_width="wrap_content"
@@ -118,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/engine_hood"
                 android:onClick="onClickChecked"
-                android:tag="engine" />
+                android:tag="engine-0" />
 
             <CheckBox
                 android:id="@+id/checkBox2"
@@ -126,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/engine_backHood"
                 android:onClick="onClickChecked"
-                android:tag="engine" />
+                android:tag="engine-1" />
         </TableRow>
 
         <TableRow
@@ -141,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/engine_underEngine"
                 android:onClick="onClickChecked"
-                android:tag="engine" />
+                android:tag="engine-2" />
 
             <CheckBox
                 android:id="@+id/checkBox4"
@@ -149,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/engine_waterCoolant"
                 android:onClick="onClickChecked"
-                android:tag="engine" />
+                android:tag="engine-3" />
         </TableRow>
 
         <TableRow
@@ -164,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/engine_brakeOil"
                 android:onClick="onClickChecked"
-                android:tag="engine" />
+                android:tag="engine-4" />
 
             <CheckBox
                 android:id="@+id/checkBox6"
@@ -172,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/engine_engineOil"
                 android:onClick="onClickChecked"
-                android:tag="engine" />
+                android:tag="engine-5" />
         </TableRow>
 
         <TableRow
@@ -187,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/engine_gear"
                 android:onClick="onClickChecked"
-                android:tag="engine" />
+                android:tag="engine-6" />
 
             <CheckBox
                 android:id="@+id/checkBox8"
@@ -195,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/engine_belt"
                 android:onClick="onClickChecked"
-                android:tag="engine" />
+                android:tag="engine-7" />
         </TableRow>
 
         <TableRow
@@ -210,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/engine_soundOut"
                 android:onClick="onClickChecked"
-                android:tag="engine" />
+                android:tag="engine-8" />
 
             <CheckBox
                 android:id="@+id/checkBox10"
@@ -218,7 +155,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/engine_soundIn"
                 android:onClick="onClickChecked"
-                android:tag="engine" />
+                android:tag="engine-9" />
         </TableRow>
 
         <TableRow
@@ -234,7 +171,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/engine_liquidLevel"
                 android:onClick="onClickChecked"
-                android:tag="engine" />
+                android:tag="engine-10" />
         </TableRow>
     </TableLayout>
 
